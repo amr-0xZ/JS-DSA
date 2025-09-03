@@ -1,6 +1,6 @@
 # Data Structures and Algorithms in JavaScript
 
-This project demonstrates fundamental data structures and algorithms using JavaScript. It is designed to help learners understand how common data structures work and how to implement basic algorithms from scratch.
+This project demonstrates data structures and algorithms using JavaScript. It is designed to help learners understand how common data structures work and how to implement basic algorithms from scratch.
 
 ## Overview
 

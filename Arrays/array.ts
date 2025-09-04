@@ -99,7 +99,7 @@ const getAll = (array : number[])=>{
         //     console.log(array[Number(index)])
         // }
 
-        // or use for(of) to loop throw or values:
+        // or use for(of) to loop throw values:
         // for(let element of array){
         //     console.log(element)
         // }

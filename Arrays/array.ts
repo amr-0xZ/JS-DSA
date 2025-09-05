@@ -99,7 +99,7 @@ const getAll = (array : number[])=>{
         //     console.log(array[Number(index)])
         // }
 
-        // or use for(of) to loop throw or values:
+        // or use for(of) to loop throw values:
         // for(let element of array){
         //     console.log(element)
         // }
@@ -116,7 +116,7 @@ const getAll = (array : number[])=>{
 
 
 //              ********* Usage *********
-let myArray = makeArray(22, 3, 75, 99);
+let myArray = makeArray(22, 3, 75, 99, 11, 25);
 console.log(myArray);
 
 

@@ -176,8 +176,6 @@ const merge = (left: number[], right: number[])=>{
 
 
 
-
-
 //          ********** Usage **********
 
 console.log(linearSearch([20, 33, 45, 4, 50], 50))

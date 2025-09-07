@@ -54,6 +54,26 @@ class Stack {
     display() {
         console.log("Current Stack:", this.items.slice(0, this.top + 1));
     }
+
+
+    // check if the stack is empty
+    isEmpty() {
+        if (this.top < 0) {
+            return 'the stack is empty'
+        } else {
+            return 'the stack is not empty'
+        }
+    }
+
+
+    // check if the stack is full
+    isFull() {
+        if (this.top == this.max-1) {
+            return 'the stack is full'
+        } else {
+            return 'the stack is not full'
+        }
+    }
 }
 
 

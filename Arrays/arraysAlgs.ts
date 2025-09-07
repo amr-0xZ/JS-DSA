@@ -88,14 +88,14 @@ const bubbleSort = (array: number[]) => {
     from the unsorted portion and moves it to the sorted portion.
                             O(n^2)
 */
-const selectionSort = (array: number[])=>{
+const selectionSort = (array: number[]) => {
     const n = array.length
     //outer loop to devide the array to sorted and unsorted parts
-    for(let i = 0; i < n-1; i++){
+    for (let i = 0; i < n - 1; i++) {
         let minIndex = i
         //inner loop to select the smallest value's index
-        for(let j = i+1; j < n; j++){
-            if(array[j] < array[minIndex]){
+        for (let j = i + 1; j < n; j++) {
+            if (array[j] < array[minIndex]) {
                 minIndex = j
             }
         }
@@ -116,22 +116,64 @@ const selectionSort = (array: number[])=>{
     among the already sorted cards.
                             O(n^2)
 */
-const insertionSort = (array: number[])=>{
+const insertionSort = (array: number[]) => {
     //outer loop to devide the array to sorted and unsorted parts
-    for(let i = 1; i < array.length; i++){
+    for (let i = 1; i < array.length; i++) {
         //get the value out of the array to make space for shifting items
         let current = array[i]
-        let j = i-1
+        let j = i - 1
         //shifting items till we find the right place to insert the value we toke 'current'
-        while(j>=0 && array[j]>current){
-            array[j+1] = array[j]
+        while (j >= 0 && array[j] > current) {
+            array[j + 1] = array[j]
             j--
         }
         // insert the value we toke 'current' in the right place
-        array[j+1] = current
+        array[j + 1] = current
     }
     return array
 }
+
+
+
+
+/* Merge Sort: It works by recursively dividing the unsorted list into sublists
+    until each sublist contains a single element,
+    then repeatedly merges these sublists to produce new sorted sublists
+    until there is only one sorted list remaining.
+                            O(n log n)
+*/
+//deviding and returning result function
+const mergeSort = (array: number[])=>{
+    if(array.length<=1) return array
+
+    const mid = Math.floor(array.length/2)
+    //calling the function it self to recursivly devide the array until there is only one item left to sort
+    const left = mergeSort(array.slice(0,mid))
+    const right = mergeSort(array.slice(mid))
+
+    return merge(left,right)
+}
+//the actual ordering and re-uniting arrays function
+const merge = (left: number[], right: number[])=>{
+    const result: Number[] = []
+    let leftIndex = 0
+    let rightIndex = 0
+
+    //sorting items in the new result array
+    while(leftIndex<left.length && rightIndex<right.length){
+        if(left[leftIndex] < right[rightIndex]){
+            result.push(left[leftIndex++])
+        }else{
+            result.push(right[rightIndex++])
+        }
+    }
+    //concat any remaining items of the arrays after sorting then return the result
+    return result.concat(left.slice(leftIndex).concat(right.slice(rightIndex)))
+}
+// see: {https://www.dsavisualizer.in/visualizer/sorting/mergesort}
+
+
+
 
 
 
@@ -151,3 +193,6 @@ console.log(selectionSort([100, 80, 60, 50, 30, 10]))
 
 
 console.log(insertionSort([100, 80, 60, 50, 30, 10]))
+
+
+console.log(insertionSort([100, 40, 60, 50, 30, 10]))

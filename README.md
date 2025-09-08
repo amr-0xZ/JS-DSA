@@ -6,7 +6,7 @@ This project demonstrates data structures and algorithms using TypeScript. It is
 
 Data structures are ways to organize and store data efficiently. Algorithms are step-by-step procedures for solving problems or performing tasks. Understanding both is essential for writing efficient and effective code.
 
-## Contents
+## Contents:
 
 - **Arrays**: The [Arrays/array.ts](Arrays/array.ts) file shows how to create and manipulate Arrays.
 

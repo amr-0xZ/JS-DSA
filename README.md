@@ -8,7 +8,10 @@ Data structures are ways to organize and store data efficiently. Algorithms are 
 
 ## Contents
 
-- **Arrays**: The [Arrays/array.ts](Arrays/array.ts) file shows how to create and manipulate arrays.
+- **Arrays**: The [Arrays/array.ts](Arrays/array.ts) file shows how to create and manipulate Arrays.
 
-- **Arrays Algorithms**: The [Arrays/arraysAlgs.ts](Arrays/arraysAlgs.ts) file shows how to apply searching and sorting algorithms on arrays.
+- **Arrays Algorithms**: The [Arrays/arraysAlgs.ts](Arrays/arraysAlgs.ts) file shows how to apply Searching and Sorting algorithms on arrays.
 
+- **Stacks**: The [Stacks/stacks-using-arrays.ts](Stacks/stacks-using-arrays.ts) file shows how to emplement the Stack structure using arrays.
+
+- **Queues**: The [Queues/single-ended.ts](Queues/single-ended.ts) file shows how to emplement the Single-Ended Queue.

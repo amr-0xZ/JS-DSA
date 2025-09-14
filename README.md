@@ -1,4 +1,4 @@
-# Data Structures and Algorithms in TypeScript
+# Data Structures and Algorithms in TypeScript:
 
 This project demonstrates data structures and algorithms using TypeScript. It is designed to understand how common data structures work and how to implement basic algorithms from scratch.
 
